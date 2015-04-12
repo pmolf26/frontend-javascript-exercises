@@ -1,3 +1,3 @@
 module.exports.linkTo = function(text, address) {   
-  return "<a href='" + adress + "'>" + text + "</a>"
+  return "<a href='" + address + "'>" + text + "</a>"
 };
