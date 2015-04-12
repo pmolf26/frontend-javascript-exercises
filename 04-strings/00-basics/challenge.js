@@ -8,17 +8,15 @@ module.exports.sliceItAndCombineIt = function(bigString, startA, endA, startB, e
 
 module.exports.findFirstMatch = function(text, searchString) {
   return text.indexOf(searchString)
-
 };
 
 module.exports.findLastMatch = function(text, searchString) {
   return text.lastIndexOf(searchString)
-
 };
 
 module.exports.substringBetweenMatches = function(text, searchString) {
-  var Offset = searchString.length;
-  var F1 = text.indexOf(searchString);
-  var F2 = text.lastIndexOf(searchString);
-  return text.substring(F1 + Offset,F2);
+  var Offset = searchString.length
+  var F1 = text.indexOf(searchString)
+  var F2 = text.lastIndexOf(searchString)
+  return text.substring(F1 + Offset,F2)
 };
