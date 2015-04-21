@@ -20,12 +20,11 @@ module.exports.formLetter = function(letter) {
 };
 
 module.exports.canIGet = function(item, money) {
-  var PriceTable = {
-    'MacBook Air': '999',
-    'MacBook Pro': '1299',
-    'Mac Pro': '2499',
-    'Apple Sticker': '1'
-  }
-  return ((item in PriceTable) && (PriceTable[item] <= money))
+  var PriceTable = {}
+    PriceTable['MacBook Air'] = "999";
+    PriceTable['MacBook Pro'] = '1299';
+    PriceTable['Mac Pro'] = '2499';
+    PriceTable['Apple Sticker'] = '1';
+    return ((item in PriceTable) && (PriceTable[item] <= money))
 }
 
