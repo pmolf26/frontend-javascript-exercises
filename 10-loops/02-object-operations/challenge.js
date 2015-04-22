@@ -14,9 +14,6 @@ module.exports.extend = function(dest, src) {
 }
 module.exports.hasElems = function(object, array) {
   for(var counter = 0; counter < array.length; counter++) {
-    if(object[array[counter]] === undefined) {
-      return false;
     }
-  }
   return true
 }
