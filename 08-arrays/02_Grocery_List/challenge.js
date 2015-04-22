@@ -1,6 +1,7 @@
 module.exports.addItem = function(item, array) {
-    array.includes(item);
+  if (array.indexOf(item) < 0) {
     array.push(item);
+  }  
     return array
 };
 
